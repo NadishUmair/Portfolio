@@ -1,0 +1,459 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;400;600;700;900&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,700&display=swap'); */
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+body{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* ##################################### Home ##################################### */
+
+
+
+.contact-btn{
+    float: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    z-index: 2;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid black;
+    /* outline: none; */
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    background-color: rgb(253, 251, 251);
+    
+}
+.contact-btn:hover{
+    color: white;
+    background: black;
+}
+
+.home{
+    width:90%;
+    height: 100%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid rgb(20, 168, 179); */
+    justify-content: space-between;
+    /* position: center; */
+    /* margin-top: 1rem;6 */
+    /* border: 2px solid red; */
+    color: white;
+    z-index: 3;
+
+}
+.container{
+    height: 90vh;
+    background-image: url(./images/wave.png);
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    /* position: absolute; */
+    /* border: 2px solid black; */
+    /* background-image: url(./images/wave.png); */
+}
+
+.content{
+    margin-top: 20%;
+    
+}
+.content h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.hire-btn{
+    display: block;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid rgb(252, 251, 251);
+    /* outline: none; */
+    border-radius: 2rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    font-weight: bold;
+    width: 17%;
+    background-color: rgb(0, 0, 0);
+    text-decoration: none;
+    color: white;
+}
+
+.hire-btn:hover{
+    color: rgb(10, 9, 9);
+    background: rgb(244, 242, 242); 
+    background: rgb(244, 242, 242); 
+}
+
+/* ########################################### picture ########################################## */
+.picture img{
+    display: block;
+    width: 90%;
+    max-height: 500px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 5rem;
+    
+    padding-right: 4rem;
+    /* border: 2px solid red; */
+}
+.picture{
+    position: relative;
+    margin-top: 0.6rem;
+    /* margin-left: 10%; */
+    /* border: 2px solid hotpink; */
+    
+}
+.for-icon{
+   border-right: 1px solid black;
+    border-radius: 90%;
+    height: 340px;
+    width: 340px;
+    /* background-color: aquamarine; */
+    position: absolute;
+    top: 38%;
+    left: 1rem;
+    z-index: 2;
+}
+.for-icon:hover{
+    border-color: 2px solid rgb(69, 112, 5);
+}
+.for-icon li{
+    
+    
+     display: block;
+     margin-top: 3rem;
+}
+.for-icon .gmail{
+    margin-left: 17.7rem;
+
+}
+
+.for-icon .instagram{
+    margin-left: 20.3rem;
+
+}
+.for-icon .facebook{
+    margin-left: 19.5rem;
+    
+
+}
+.icon-color{
+    color: black;
+    background-color: white;
+}
+
+
+/* ##################################### my-intro style ############################### */
+#type{
+    position: absolute;
+    top: 65%;
+    left: 10%;
+    width: 60%;
+    color: rgb(5, 5, 5);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
+}
+#typed-string{
+    display: none;
+}
+.intro-text{
+    letter-spacing: 7px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0ch;
+    animation: text 6s;
+    
+}
+
+@keyframes text{
+    0%{
+        width: 0ch;
+    }
+    50%{
+        width: 40ch;
+    }
+}
+@keyframes typing{
+    from{width:0}
+}
+/* ################################### Services Section ############################ */
+.services{
+    /* border: 2px solid red; */
+    background-color: rgb(240, 242, 252);
+    padding: 1rem;
+}
+.services h1{
+    text-align: center;
+}
+.services-section{
+    /* border: 2px solid green; */
+    display: flex;
+   
+    width: 90%;
+    margin-left: 5%;
+}
+.services-section .box{
+    /* border: 2px solid hotpink; */
+    width: 33.3%;
+    position: relative;
+}
+.box-content{
+    /* border: 2px solid red; */
+    /* position: absolute; */
+    top: 50%;
+    /* left: 50%; */
+}
+.box-content ul{
+    list-style: none;
+}
+.box-content li {
+    margin: 10px 0;
+  }
+.box-content {
+    
+    position: absolute;
+    top: 50%; /* Adjust the top value as needed to place it over the blob */
+    left: 50%; /* Adjust the left value as needed to place it over the blob */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the <ul> appears above the blob (adjust as needed) */
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove any default padding */
+    text-align: center; /* Center the content */
+    color: white; /* Set the text color */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  @media (max-width: 768px) {
+    .services-section {
+       display: block;
+       width: 100%;
+      
+    }
+    .services-section .box{
+        width: 100%;
+    }
+    .services{
+        margin-top: 9rem;
+       
+    }
+}
+/* ####################### hire style ##################################### */
+.hire-container h1{
+    text-align: center;
+}
+.hire-container{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.hire-inside{
+    width: 80%;
+   margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hire-img img{
+   width: 320px;
+   padding: 1rem;
+  
+}
+.resume-download{
+  
+   /* border: 2px solid rebeccapurple; */
+   width: 50%;
+   padding: 1rem;
+   
+}
+.resume-download p{
+    font-size: 1.2rem;
+}
+.button-resume{
+    margin-top: 2rem;
+}
+.button-resume a{
+    text-decoration: none;
+    font-size: 1.5rem;
+   padding: 1rem;
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+    height: 100%;
+  text-align: center;
+  padding-top: 0.9rem;
+  padding-left: 0.4rem;
+  font-weight: bold;
+   box-shadow:  2px 2px 4px rgba(102, 101, 101, 0.5);
+     
+}
+.hire-container .button-resume a:hover{
+    color: rgb(13, 13, 13);
+    background: rgb(255, 255, 255); 
+     border: 2px solid black;
+}
+.button-resume{
+    /* height: 4rem; */
+     width: 70%;
+    /* border: 2px solid green; */
+}
+a span{
+    position: relative;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+   
+    padding: 1.5rem;
+}
+ a span::after{
+    content: '\21D3';
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    /* padding-right:10px ; */
+    animation: down 1s linear infinite;
+}
+@keyframes down{
+    form{
+        top: 15px;
+        opacity: 0;
+    }
+    to{
+        top: 15px;
+        opacity: 1;
+    }
+}
+
+/* ##################################### footer style ################################## */
+.footer{
+    background-color: black;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+}
+.footer-container h3{
+    color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
+.footer-container .quick-links{
+    /* border: 3px solid rgb(255, 255, 255); */
+  /* width: 50%; */
+    padding: 1rem;
+}
+.footer-container .contact-me{
+    padding: 1rem;
+    /* width: 50%; */
+    /* text-align: right; */
+    /* text-align: end; */
+}
+
+.footer-container{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    /* border: 1px solid red; */
+}
+
+.footer-container li{
+    list-style: none;
+   margin-bottom: 5px;
+}
+.footer-container li a{
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 4rem;
+}
+.footer-container li a:hover{
+    color: rgb(192, 192, 193);
+    font-size: 1.2rem;
+}
+/* ################################media queries############################# */
+
+@media (max-width:712px){
+ 
+    .hire-btn{
+        width: 22%;
+    }
+ 
+  
+    .for-icon{
+        top: 25%;
+        width: 280px;
+        height: 280px;
+    }
+    .for-icon .gmail{
+        margin-left: 15rem;
+    
+    }
+    
+    .for-icon .instagram{
+        margin-left: 16.5rem;
+    
+    }
+    .for-icon .facebook{
+        margin-left: 14.5rem;
+        
+    
+    }
+ 
+   #type{
+       position: relative;
+       font-size: 1.5rem;
+       width: 90%;
+    }
+  
+    
+        .resume-download{
+  
+            /* border: 2px solid rgb(1, 128, 39); */
+            width: 100%;
+           padding: 0rem;
+           
+            
+         }
+    
+    .resume-download .button-resume{
+        width: 100%;
+    }
+    .resume-download span{
+     position: relative;
+        /* border: 2px solid red; */
+       color: black;
+      
+        padding: 0.2rem;
+       margin-left: 1rem;
+       margin-bottom: 2rem;
+    }
+    a span::after{
+        content: '\21D3';
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        /* position: absolute; */
+        padding-right:10px ;
+        animation: down 1s linear infinite;
+    }
+    @keyframes down{
+        form{
+            top: 30px;
+            opacity: 0;
+        }
+        to{
+            top: 10px;
+            opacity: 1;
+        }
+    }
+    .footer-container{
+        margin-left: 0%;
+    }
+
+} 
